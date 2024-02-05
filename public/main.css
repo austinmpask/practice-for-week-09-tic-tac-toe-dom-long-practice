@@ -1,1 +1,42 @@
-/* Your code here */
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 600px;
+  width: 600px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.square {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.square:hover {
+  cursor: pointer;
+}
+
+.title {
+  font-size: 2em;
+  margin: 20px 0px;
+}
+
+.below-board {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 600px;
+  margin: 20px;
+}
+
+img {
+  height: 90%;
+  width: 90%;
+}
